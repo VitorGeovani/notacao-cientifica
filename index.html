@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notação Científica</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container text-center">
+    <h1 class="my-5">Resolver Notações Científicas</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <input type="text" id="numero" class="form-control" placeholder="Número">
+          <div class="input-group-append">
+            <span class="input-group-text">x 10^</span>
+          </div>
+          <input type="text" id="expoente" class="form-control" placeholder="Expoente">
+        </div>
+        <button type="button" id="resolver" class="btn btn-primary btn-lg btn-block my-3">Resolver</button>
+        <button type="button" id="limpar" class="btn btn-secondary btn-lg btn-block my-3">Limpar</button>
+        <div class="resultado mt-4">
+          <p class="font-weight-bold">
+            Resultado:
+            <span id="resultado"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
